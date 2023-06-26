@@ -1,8 +1,11 @@
 def calculator
     puts "Welcome to the Calculator App"
+
+# Prompt for the first number
     puts "Please enter first number:"
     num1 = gets.chomp.to_f
 
+# Prompt for the operation
     puts "Select an operation:"
     puts "1. Addition"
     puts "2. Subtraction"
@@ -10,6 +13,7 @@ def calculator
     puts "4. Division"
     operation = gets.chomp.to_i
 
+# Prompt for the second number
     puts "Please enter the second number:"
     num2 = gets.chomp.to_f
 
@@ -34,6 +38,8 @@ when 4
   else
     puts "Error: Invalid operation selected."
   end
+
+ # Display the full equation and its result
   puts "Result : #{num1} #{operation} #{num2} = #{result}"
 end
 
