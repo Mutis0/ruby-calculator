@@ -1,6 +1,6 @@
 def calculator
     puts "Welcome to the Calculator App"
-    puts "Please enter first number :"
+    puts "Please enter first number:"
     num1 = gets.chomp.to_f
 
     puts "Select an operation:"
@@ -34,4 +34,8 @@ when 4
   else
     puts "Error: Invalid operation selected."
   end
+  puts "Result : #{num1} #{operation} #{num2} = #{result}"
 end
+
+# Call calculator method to start the program
+calculator ()
